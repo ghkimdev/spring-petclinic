@@ -107,10 +107,3 @@ jobs:
         git config --global user.email 'ghkim.dev@gmail.com'
         git commit -am "update image in petclinic.yml"
         git push
-
-    - name: Create k8s Kind Cluster
-      uses: helm/kind-action@v1
-
-    - name: Deploy application
-      run: |
-        kubectl apply -f k8s/
