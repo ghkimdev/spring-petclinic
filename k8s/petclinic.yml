@@ -30,7 +30,7 @@ spec:
     spec:
       containers:
         - name: workload
-          image: ghkimdev/petclinic:1.0.0-10
+          image: ghkimdev/petclinic:1.0.0-15
           env:
             - name: SPRING_PROFILES_ACTIVE
               value: postgres
